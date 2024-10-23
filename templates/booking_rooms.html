@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block content %}
+    <h1 style="color: white; text-align: center; font-family: Trajan Pro, sans-serif;">Booking Rooms</h1>
+    <hr>
+    <form method="POST" action="{% url 'booking_room' %}">
+    {% csrf_token %}
+        <label for="room-number" style="color: #f2f2f2; font-family: Trajan Pro, sans-serif;">Room number: </label>
+        <input type="text" id="room-number" name="room-number">
+        <br>
+
+        <label for="start-time" style="color: #f2f2f2; font-family: Trajan Pro, sans-serif;">Start time: </label>
+        <input type="datetime-local" id="start-time" name="start-time">
+        <br>
+
+        <label for="end-time" style="color: #f2f2f2; font-family: Trajan Pro, sans-serif;">End time: </label>
+        <input type="datetime-local" id="end-time" name="end-time">
+        <br>
+        <button type="submit" class="btn btn-outline-light" style="margin-right: 20px; margin-top: 10px; font-family: Trajan Pro, sans-serif;">Book this room</button>
+
+        </form>
+{% endblock %}

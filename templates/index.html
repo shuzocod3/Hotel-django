@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+    <h1 style="color: white; text-align: center;font-family: Trajan Pro, sans-serif;">{{ render_string }}</h1>
+    <hr>
+    <a href="{% url 'room_list' %}"> <h1 style= "margin-left: 0px; font-family: Trajan Pro, sans-serif;" <button type="button" class="btn btn-outline-light">Rooms</button></h1> </a>
+    <a href="{% url 'employee_info' %}"> <h1 style="margin-left: 50px; font-family: Trajan Pro, sans-serif;" <button type="button" class="btn btn-outline-light">Employee Info</button></h1> </a>
+    <a href="{% url 'booking_room' %}"> <h1 style="margin-left: 50px; font-family: Trajan Pro, sans-serif;" <button type="button" class="btn btn-outline-light">Booking Rooms</button></h1> </a>
+    <a href="{% url 'register' %}"> <h1 style="margin-left: 1255px; font-family: Trajan Pro, sans-serif;" <button type="button" class="btn btn-outline-light">Register</button></h1> </a>
+    <a href="{% url 'login' %}"> <h1 style="margin-left: 1810px; font-family: Trajan Pro, sans-serif;" <button type="button" class="btn btn-outline-light">Login</button></h1> </a>
+{% endblock %}

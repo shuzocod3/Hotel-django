@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+    <h1 style="color: white; text-align: center; font-family: Trajan Pro, sans-serif;">Booking Detail</h1>
+    <hr>
+
+    <h1 style="color: #f2f2f2; font-family: Trajan Pro, sans-serif;">Booking #{{ booking.id }}</h1>
+    <h3 style="color: #f2f2f2; font-family: Trajan Pro, sans-serif;">User: {{ booking.user.username }}</h3>
+    <h3 style="color: #f2f2f2; font-family: Trajan Pro, sans-serif;">Room: {{ booking.room }}</h3>
+    <h3 style="color: #f2f2f2; font-family: Trajan Pro, sans-serif;">Time range: {{ booking.start_time }} - {{ booking.end_time }}</h3>
+{% endblock %}

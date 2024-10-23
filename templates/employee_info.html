@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+    <h1 style="color: white; text-align: center; font-family: Trajan Pro, sans-serif;">Employees Info</h1>
+    <hr>
+    {% for employee in employees %}
+    <h1 style="color: #f2f2f2; font-family: Trajan Pro, sans-serif;"> Ім'я: {{ employee.name }}</h1>
+    <h2 style="font-family: Trajan Pro, sans-serif;"> <li>Вік: {{ employee.age }} </li></h2>
+    <h2 style="font-family: Trajan Pro, sans-serif;"> <li>Робота: {{ employee.work }} </li></h2>
+    {% endfor %}
+{% endblock %}

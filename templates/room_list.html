@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+    <h1 style="color: white; text-align: center; font-family: Trajan Pro, sans-serif;">Rooms</h1>
+    <hr>
+    {% for room in rooms %}
+    <h1 style="color: #f2f2f2;"> Номер кімнати: {{ room.number }}</h1>
+    <h2 style="font-family: Trajan Pro, sans-serif;"> <li>Кількість людей: {{ room.capacity }} </li></h2>
+    <h2 style="font-family: Trajan Pro, sans-serif;"> <li>Ціна: {{ room.cost }} гривень </li></h2>
+    <h2 style="font-family: Trajan Pro, sans-serif;"> <li>Опис кімнати: {{ room.description }} </li></h2>
+    <br>
+    {% endfor %}
+{% endblock %}
